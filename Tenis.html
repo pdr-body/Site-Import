@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Danfo&family=Pirata+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Estilos/tenis.css">
+    <title>Tênis</title>
+</head>
+<body>
+    <main>
+        <section>
+            <div>
+                <header>Tenis</header>
+                <button class="hamburger" onclick="toggleMenu()">☰</button>
+                    <div class="menu" id="menu">
+                        <a href="index.html">Inico</a>
+                        <a href="Conjuntos.html">Conjuntos</a>
+                        <a href="Camisas.html">Camisetas</a>
+                        <a href="Tenis.html">Tênis</a>
+                    </div>
+            </div>
+        </section>
+
+        <section class="tenis">
+            <div>
+                <img src="Estilos/img/descarregar.jpg" alt="Tenis">
+                <p>Nike Air Max Dn 'All Night': R$130,50</p>
+            </div>
+            <div>
+                <img src="Estilos/img/Cortez.jpg" alt="Tenis">
+                <p>Nike Air Max 95 Corteiz: R$120,00</p>
+            </div>
+            <div>
+                <img src="Estilos/img/Jordan.jpg" alt="">
+                <p>Jordan 4 Black Cat: R$120,90</p>
+            </div>
+            <div>
+                <img src="Estilos/img/Nike Air Force 1 Low '07 (White) - 7_5.jpg" alt="">
+                <p>Air Force 1: R$90,99</p>
+            </div>
+            <div>
+                <img src="Estilos/img/Nike Air Zoom Vomero 'Triple Navy' BV1358-400 - MENS _ Mens US10 _ 28CM _ EU44.jpg" alt="">
+                <p>Nike Air Zoom Vomero 'Triple Navy': R$140,00</p>
+            </div>
+            <div>
+                <img src="Estilos/img/Tênis Nike Sportswear Air Max 95 Masculino.jpg" alt="">
+                <p>Nike Air Max 95: R$110,00</p>
+            </div>
+            <div>
+                <img src="Estilos/img/Nike Patta x FC Barcelona x Air Max Plus 'Home Kit' FN8260-001.jpg" alt="">
+                <p>Nike Patta x FC Barcelona x Air Max Plus: R$130,00</p>
+            </div>
+            <div>
+                <img src="Estilos/img/Nike x Skepta Air Max Tailwind 5 'Bright Blue' CQ8714-001.jpg" alt="">
+                <p>Nike x Skepta Air Max Tailwind 5:R$120,55</p>
+            </div>
+        </section>
+    </main>
+    
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>

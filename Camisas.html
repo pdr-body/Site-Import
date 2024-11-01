@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Danfo&family=Pirata+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Estilos/camisas.css">
+    <title>Camisas</title>
+</head>
+<body>
+    <main>
+        <section id="container">
+            <div>
+                <header>Camisetas</header>
+                <button class="hamburger" onclick="toggleMenu()">☰</button>
+                    <div class="menu" id="menu">
+                        <a href="index.html">Inico</a>
+                        <a href="Conjuntos.html">Conjuntos</a>
+                        <a href="Camisas.html">Camisetas</a>
+                        <a href="Tenis.html">Tênis</a>
+                    </div>
+            </div>
+        </section>
+
+        <section class="camisas">
+            <div class="America">
+                <img src="Estilos/img/descarregar (3).jpg" alt="camisa">
+                <p>Camisa de Futebol Americano: R$40,00</p>
+            </div>
+
+            <div class="cortez">
+                <img src="Estilos/img/Corteiz OG Island Tee White - L _ NZ.jpg" alt="camisa">
+                <p>Camisa Cortez Branca: R$30,00</p>
+            </div>
+
+            <div>
+                <img src="Estilos/img/Camisa Polo Lacoste Kids Infantil Logo Off-White_Verde.jpg" alt="camisa">
+                <p>Camisa Polo Lacoste: R$40,50</p>
+            </div>
+            <div>
+                <img src="Estilos/img/Camisa Corinthians Juvenil I 20_21 s_n° Torcedor Nike.jpg" alt="camisa">
+                <p>Camisa Corinthians: R$30,50</p>
+            </div>
+
+            <div>
+                <img src="Estilos/img/Vintage Real Madrid Adidas Teka Soccer Team Jersey Large Size.jpg" alt="camisa">
+                <p>Camisa Real Madrid Vintage: R$49,99</p>
+            </div>
+
+            <div>
+                <img src="Estilos/img/nike.jpg" alt="camisa">
+                <p>Camisa Dri-fit Nike: R$29,50</p>
+            </div>
+        </section>
+    </main>
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>

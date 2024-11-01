@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fidelis Imports</title>
+    <link rel="stylesheet" href="Estilos/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Danfo&family=Pirata+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <section id="container">
+            <div>
+                <header>Fidelis Imports</header>
+                <button class="hamburger" onclick="toggleMenu()">☰</button>
+                    <div class="menu" id="menu">
+                        <a href="Conjuntos.html">Conjuntos</a>
+                        <a href="Camisas.html">Camisetas</a>
+                        <a href="Tenis.html">Tênis</a>
+                    </div>
+            </div>
+            <div class="container__conjuntos">
+                <div class="nav-arrow left" onclick="changeImage(-1)">&#10094;</div>
+                <div class="nav-arrow right" onclick="changeImage(1)">&#10095;</div>
+                <div class="Tenis">
+                    <img src="Estilos/img/Jordan.jpg" alt="Tênis" class="active">
+                    <img src="Estilos/img/descarregar.jpg" alt="Tênis">
+                    <img src="Estilos/img/Cortez.jpg" alt="Tênis">
+                    <img src="Estilos/img/Nike Air Force 1 Low '07 (White) - 7_5.jpg" alt="Tênis">
+                </div>
+            </div>
+        </section>
+        
+        <h3>Conjuntos Novos:</h3>
+        <section class="container__roupas">
+                <div class="Palm">
+                    <img src="Estilos/img/@projectbrat.jpg" alt="Conjunto">
+                    <p>Conjunto Palm Angels: R$120,50</p>
+                </div>
+                
+                <div class="Nike">
+                    <img src="Estilos/img/descarregar (1).jpg" alt="Conjunto">
+                    <p>Conjunto Nike: R$100,50</p>
+                </div>
+                
+                <div class="Barce">
+                    <img src="Estilos/img/@dadonkae _3.jpg" alt="Conjunto">
+                    <p>Conjunto Moletom Ralph: R$80,50</p>
+                </div>
+        </section>
+       
+       
+        <h4>Essenciais Masculinos:</h4>
+        <div class="clock">
+            <video width="300" autoplay loop muted>
+                <source src="Estilos/img/7cdc66ade67de723b1d111c6e97de615.mp4" type="video/mp4">
+            </video>
+            <p>Replica Rolex: R$200,50</p>
+        </div>
+        <section class="Essenciais">
+            <div>
+                <img src="Estilos/img/descarregar (6).jpg" alt="Oculos">
+                <p>Óculos Palm Angels 'War': R$120,00</p>
+            </div>
+            <div>
+                <img src="Estilos/img/clock.jpg" alt="">
+                <p>Relogio Silver: R$140,00</p>
+            </div>
+            <div>
+                <img src="Estilos/img/descarregar (5).jpg" alt="">
+                <p>Relogio de Moeda Derretida: R$100,00</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>copyright © Fidelis Imports 2024 - Produtos com preço que você sempre sonhou.</p>
+    </footer>
+
+    <script>
+        let currentIndex = 0;
+        const images = document.querySelectorAll(".Tenis img");
+
+        function changeImage(direction) {
+            images[currentIndex].classList.remove("active");
+            currentIndex = (currentIndex + direction + images.length) % images.length;
+            images[currentIndex].classList.add("active");
+        }
+    </script>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>
